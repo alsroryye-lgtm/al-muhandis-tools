@@ -1,0 +1,19 @@
+# 1. انتقل إلى مجلد مشروعك المحلي
+cd /path/to/your/project
+
+# 2. تهيئة مستودع Git محلي (إذا لم يكن مهيأ مسبقاً)
+git init
+
+# 3. إضافة الملفات للمستودع المحلي
+git add .
+
+# 4. حفظ التغييرات (Commit)
+git commit -m "First commit - Al-Muhandis Project"
+
+# 5. ربط المستودع المحلي بمستودعك على غيت هاب (بعد إنشائه فارغاً من الموقع)
+git branch -M main
+git remote add origin https://github.com/اسم_المستخدم/اسم_المستودع.git
+
+# 6. رفع الملفات إلى غيت هاب
+git push -u origin main
+
